@@ -4,9 +4,32 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+
+//componentes 
+import {
+
+  FullLayoutTravellistComponent,
+  ContentTravellistComponent,
+  NavbarTravellistComponent,
+  FooterTravellistComponent,
+  SimpleLayoutComponent
+} from './layout';
+
+//variable contenedor
+const APP_CONTAINERS=[
+  FullLayoutTravellistComponent,
+  ContentTravellistComponent,
+  NavbarTravellistComponent,
+  FooterTravellistComponent,
+  SimpleLayoutComponent
+];
+
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ...APP_CONTAINERS
+  
   ],
   imports: [
     BrowserModule,
